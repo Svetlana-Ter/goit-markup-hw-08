@@ -1,0 +1,41 @@
+.contacts-info {
+  margin-left: auto;
+}
+
+.contacts-info a + a {
+  margin-left: 30px;
+}
+
+.contacts-info > a {
+  display: inline-flex;
+  align-items: center;
+
+  color: $primary-text-color;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $time $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.icon-envelope {
+  margin-right: 10px;
+  width: 16px;
+  height: 11.2px;
+  fill: currentColor;
+}
+
+.icon-telephone {
+  margin-right: 10px;
+  width: 10px;
+  height: 15px;
+  fill: currentColor;
+}

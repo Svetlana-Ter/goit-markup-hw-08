@@ -1,0 +1,42 @@
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  transition: background-color $time $time-function,
+    border-radius $time $time-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50px;
+  }
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  fill: $icon-color;
+
+  transition: fill $time $time-function;
+
+  .social-link:hover &,
+  .social-link:focus & {
+    fill: $white-color;
+  }
+}
+
+footer .social-link {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+}
+
+footer .social-icon {
+  fill: $white-color;
+}

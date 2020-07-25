@@ -1,0 +1,16 @@
+.logo {
+  margin-right: 85px;
+
+  color: $black-color;
+
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  &-web {
+    color: $accent-color;
+  }
+  &-studio {
+    color: $white-color;
+  }
+}

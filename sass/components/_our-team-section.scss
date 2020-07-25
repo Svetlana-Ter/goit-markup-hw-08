@@ -1,0 +1,37 @@
+.section.team {
+  background-color: $bg-color;
+}
+
+.workers .item {
+  width: calc((100% - 90px) / 4);
+
+  background-color: $white-color;
+  text-align: center;
+  box-shadow: $card-shadow;
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:first-child) {
+    margin-left: 30px;
+  }
+}
+
+.card-content {
+  padding: 30px 32px 24px 32px;
+}
+
+.name {
+  margin-bottom: 10px;
+
+  color: $titles-color;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.profession {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.19;
+}

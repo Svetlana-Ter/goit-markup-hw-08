@@ -1,0 +1,65 @@
+.clients {
+  display: flex;
+}
+
+.clients .item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.clients .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 90px;
+  @include bordered($icon-color);
+
+  transition: border $time $time-function;
+
+  &:hover,
+  &:focus {
+    @include bordered($accent-color);
+  }
+}
+
+.clients-icon {
+  fill: $icon-color;
+
+  transition: fill $time $time-function;
+
+  .clients .link:hover &,
+  .clients .link:focus & {
+    fill: $accent-color;
+  }
+}
+
+.logo1 {
+  width: 44px;
+  height: 49px;
+}
+
+.logo2 {
+  width: 40px;
+  height: 52px;
+}
+
+.logo3 {
+  width: 41px;
+  height: 43px;
+}
+
+.logo4 {
+  width: 80px;
+  height: 42px;
+}
+
+.logo5 {
+  width: 59px;
+  height: 47px;
+}
+
+.logo6 {
+  width: 88px;
+  height: 45px;
+}
