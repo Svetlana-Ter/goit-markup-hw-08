@@ -200,6 +200,11 @@ img {
           align-items: center;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .section-title {
   color: #212121;
   font-weight: 700;
@@ -658,18 +663,12 @@ footer .social-icon {
   }
 }
 
-.principles {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .principles .item {
-  width: calc((100% - 90px) / 4);
+  width: 100%;
 }
 
-.principles .item:not(:first-child) {
-  margin-left: 30px;
+.principles .item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .icon-principles {
@@ -679,9 +678,11 @@ footer .social-icon {
 
 .icon-box {
   height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 25px 100px;
+  text-align: center;
 }
 
 .principles .title {
@@ -691,6 +692,7 @@ footer .social-icon {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .principles .text {

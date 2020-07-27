@@ -200,6 +200,11 @@ img {
           align-items: center;
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .section-title {
   color: #212121;
   font-weight: 700;
