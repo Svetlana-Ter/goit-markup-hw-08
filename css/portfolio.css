@@ -206,9 +206,10 @@ img {
 }
 
 .section-title {
+  margin-bottom: 30px;
+  font-size: 28px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
@@ -490,9 +491,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-media > .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icon {

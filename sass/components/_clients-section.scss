@@ -1,9 +1,14 @@
 .clients {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
-.clients .item:not(:first-child) {
-  margin-left: 30px;
+// .clients .item:not(:first-child) {
+//   margin-left: 30px;
+// }
+.clients .item {
+  margin: 15px;
 }
 
 .clients .link {

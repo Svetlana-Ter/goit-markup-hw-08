@@ -16,7 +16,11 @@
 
 .social-media {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-media > .item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-icon {
