@@ -2,25 +2,31 @@ footer {
   background-color: #2f303a;
 }
 
-footer > .flex-container {
-  padding-top: 45px;
-  padding-bottom: 28px;
-  align-items: baseline;
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+  // padding-top: 45px;
+  // padding-bottom: 28px;
+  // align-items: baseline;
 }
 
 .join {
-  margin-left: 69px;
-  width: 206px;
+  margin-top: 60px;
+  // margin-left: 69px;
+  // width: 206px;
 }
 
 .subscribe {
-  margin-left: auto;
-  min-width: 570px;
-  height: 86px;
+  margin-top: 60px;
+  // margin-left: auto;
+  // min-width: 570px;
+  // height: 86px;
 }
 
 .adress-footer {
-  margin-top: 8px;
+  margin-top: 20px;
+  // margin-top: 8px;
 
   color: $white-color;
 
@@ -31,7 +37,8 @@ footer > .flex-container {
 
 .adress-footer a {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
+  // margin-top: 9px;
 
   color: $grey-color;
 }
@@ -51,8 +58,10 @@ footer > .flex-container {
 
 .subscribe-email {
   padding: 14px 16px;
-  min-width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
+  // min-width: 358px;
+  // margin-right: 12px;
 
   background-color: inherit;
 

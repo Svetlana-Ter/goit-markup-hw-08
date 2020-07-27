@@ -787,6 +787,9 @@ footer .social-icon {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: -15px;
 }
 
@@ -1111,27 +1114,22 @@ footer {
   background-color: #2f303a;
 }
 
-footer > .flex-container {
-  padding-top: 45px;
-  padding-bottom: 28px;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 
 .join {
-  margin-left: 69px;
-  width: 206px;
+  margin-top: 60px;
 }
 
 .subscribe {
-  margin-left: auto;
-  min-width: 570px;
-  height: 86px;
+  margin-top: 60px;
 }
 
 .adress-footer {
-  margin-top: 8px;
+  margin-top: 20px;
   color: #ffffff;
   font-style: normal;
   font-size: 14px;
@@ -1140,7 +1138,7 @@ footer > .flex-container {
 
 .adress-footer a {
   display: inline-block;
-  margin-top: 9px;
+  margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -1157,8 +1155,8 @@ footer > .flex-container {
 
 .subscribe-email {
   padding: 14px 16px;
-  min-width: 358px;
-  margin-right: 12px;
+  width: 100%;
+  margin-bottom: 20px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
