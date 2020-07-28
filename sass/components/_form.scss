@@ -1,18 +1,22 @@
 .form {
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   padding: 40px;
 }
 
 .form-title {
-  margin-bottom: 30px;
-
   font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-
   color: $titles-color;
+  line-height: 1.5;
+
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form-field {
@@ -30,11 +34,11 @@
 
   @include bordered(rgba(33, 33, 33, 0.2));
 
-  font-size: $main-font-size;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  font-family: $main-font;
   color: $titles-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  letter-spacing: 0.01em;
+  line-height: 1.14;
 
   transition: border $time $time-function;
 }
@@ -142,13 +146,20 @@
 }
 
 .agreement-label {
-  font-size: $main-font-size;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   padding-left: 24px;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-size: $main-font-size;
+    line-height: 1.71;
+  }
 
   &::before {
     content: "";
     position: absolute;
+    left: 0;
     left: 16px;
     top: 50%;
     transform: translate(-100%, -50%);
