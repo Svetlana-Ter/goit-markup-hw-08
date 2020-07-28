@@ -205,6 +205,13 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-title {
   margin-bottom: 30px;
   font-size: 28px;
@@ -212,6 +219,13 @@ img {
   font-weight: 700;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .visually-hidden {
@@ -676,6 +690,12 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    text-align: initial;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .join {
     margin-top: 60px;
@@ -688,11 +708,18 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 69px;
+    width: 206px;
+  }
+}
+
 .subscribe {
   margin-top: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe {
     -webkit-box-flex: 2;
         -ms-flex-positive: 2;
@@ -710,6 +737,14 @@ footer {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: auto;
+    min-width: 570px;
+    margin-top: 0;
+  }
+}
+
 .adress-footer {
   margin-top: 20px;
   color: #ffffff;
@@ -722,6 +757,12 @@ footer {
   display: inline-block;
   margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-footer a {
+    margin-top: 9px;
+  }
 }
 
 .join > .title,
@@ -740,20 +781,28 @@ footer {
   width: 100%;
   margin-bottom: 20px;
   background-color: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 768px) {
   .subscribe-email {
     width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-email {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
