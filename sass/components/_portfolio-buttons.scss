@@ -1,10 +1,23 @@
 .examples-choice {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
 
-  & .item:not(:first-child) {
-    margin-left: 8px;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin: -7.5px -4px;
+    margin-bottom: 40px;
+
+    & .item {
+      margin: 7.5px 4px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+
+    & .item:not(:first-child) {
+      margin-left: 8px;
+    }
   }
 }
 

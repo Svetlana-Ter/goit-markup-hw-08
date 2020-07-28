@@ -15,8 +15,11 @@
   fill: $titles-color;
 }
 
-.icon-burger:hover {
-  fill: $accent-color;
+.icon-burger {
+  transition: fill $time $time-function;
+  &:hover {
+    fill: $accent-color;
+  }
 }
 
 .button-menu .icon-menu-close {
@@ -25,6 +28,7 @@
 
 .button-menu.is-open .icon-menu-close {
   display: block;
+  transition: fill $time $time-function;
 
   &:hover {
     fill: $accent-color;

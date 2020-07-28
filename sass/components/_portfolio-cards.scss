@@ -1,6 +1,9 @@
 .examples-list {
-  display: flex;
-  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
 .examples-list .link {
@@ -13,15 +16,31 @@
 }
 
 .examples-list .item {
-  width: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
-  &:nth-child(3n) {
-    margin-right: 0;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-  &:nth-last-child(-n + 3) {
-    margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+  }
+
+  // width: calc((100% - 60px) / 3);
+  // margin-right: 30px;
+  // margin-bottom: 30px;
+  // &:nth-child(3n) {
+  //   margin-right: 0;
+  // }
+  // &:nth-last-child(-n + 3) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .examples-list .item .box {
@@ -39,6 +58,10 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .examples-list .type {
