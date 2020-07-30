@@ -46,7 +46,9 @@
     top: 100%;
     left: 0;
 
-    display: none;
+    // display: none;
+    transform: translateY(-120%);
+    trasition: transform 5000ms $time-function;
 
     padding-top: 60px;
 
@@ -57,8 +59,10 @@
   }
 
   &.is-open {
-    display: block;
+    // display: block;
+    transform: translateY(0);
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;

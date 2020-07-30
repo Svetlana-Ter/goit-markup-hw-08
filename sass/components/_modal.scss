@@ -6,9 +6,13 @@
   height: 100%;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 
   opacity: 1;
   transition: opacity $time $time-function;
+  @media screen and (max-width: 479px) {
+    padding: 93px 15px 94px 15px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -16,16 +20,29 @@
   pointer-events: none;
 
   & .modal {
-    transform: translate(-50%, -50%) scale(1.1);
+    @media screen and (max-width: 479px) {
+      transform: scale(1.1);
+    }
+
+    @media screen and (min-width: 480px) {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
   }
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 450px;
-  height: 609px;
+  @media screen and (max-width: 479px) {
+    transform: scale(1);
+  }
+
+  @media screen and (min-width: 480px) {
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 609px;
+  }
 
   @media screen and (min-width: 1200px) {
     width: 528px;
@@ -36,6 +53,5 @@
   box-shadow: $card-shadow;
   border-radius: 4px;
 
-  transform: translate(-50%, -50%) scale(1);
   transition: transform $time $time-function;
 }
