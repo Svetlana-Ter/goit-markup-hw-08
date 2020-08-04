@@ -46,9 +46,7 @@
     top: 100%;
     left: 0;
 
-    // display: none;
-    transform: translateY(-120%);
-    transition: transform 5s $time-function;
+    display: none;
 
     padding-top: 60px;
 
@@ -59,8 +57,7 @@
   }
 
   &.is-open {
-    // display: block;
-    transform: translateY(0);
+    display: block;
   }
 
   @media screen and (min-width: 768px) {
